@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Word Cards</title>
+    <style>
+      #cards {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .card {
+        width: 200px;
+        height: 300px;
+        border: solid;
+        border-radius: 10px;
+        box-shadow: grey 0 0 5px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+      .word {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+    <script src='review.js'></script>
+  </head>
+  <body>
+    <h1>Word Cards</h1>
+    <div id='words-count'></div>
+    <div id='cards'></div>
+    <button id='clear'>清空</button>
+  </body>
+</html>
